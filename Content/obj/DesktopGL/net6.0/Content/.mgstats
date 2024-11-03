@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/jafo1/Desktop/Projetos/JOGOS/monogame/BadBadWolf_Engine/Content/ball.png","C:/Users/jafo1/Desktop/Projetos/JOGOS/monogame/BadBadWolf_Engine/Content/bin/DesktopGL/Content/ball.xnb","TextureProcessor","Texture2DContent",1079,16469,0.3281361
+"C:/Users/jafo1/Desktop/Projetos/JOGOS/monogame/BadBadWolf_Engine/Content/block.png","C:/Users/jafo1/Desktop/Projetos/JOGOS/monogame/BadBadWolf_Engine/Content/bin/DesktopGL/Content/block.xnb","TextureProcessor","Texture2DContent",8101,16469,0.0041185
