@@ -83,6 +83,7 @@ and load any non-graphic related content.
                 new Block(64, 64),
                 new Block(0, 64),
                 new Block(64, 0),
+                new Block(-256, -128)
             };
             myController = new Controller();
             base.Initialize();
