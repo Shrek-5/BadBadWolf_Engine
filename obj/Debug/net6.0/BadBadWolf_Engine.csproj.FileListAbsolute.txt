@@ -25,3 +25,4 @@ C:\Users\jafo1\Desktop\Projetos\JOGOS\monogame\BadBadWolf_Engine\obj\Debug\net6.
 C:\Users\jafo1\Desktop\Projetos\JOGOS\monogame\BadBadWolf_Engine\obj\Debug\net6.0\ref\BadBadWolf_Engine.dll
 C:\Users\jafo1\Desktop\Projetos\JOGOS\monogame\BadBadWolf_Engine\bin\Debug\net6.0\Content\ball.xnb
 C:\Users\jafo1\Desktop\Projetos\JOGOS\monogame\BadBadWolf_Engine\bin\Debug\net6.0\Content\block.xnb
+C:\Users\jafo1\Desktop\Projetos\JOGOS\monogame\BadBadWolf_Engine\obj\Debug\net6.0\BadBadWolf_Engine.sourcelink.json

@@ -1,0 +1,6 @@
+
+2º - Implementar deteção da colisao entre testBall e blocos na lista
+3º - Organizar e Planear maneira de estruturar Niveis com disposição matricial dos objetos + Colisoes
+
+Descubertas:
+-flags de colisoes e propriedades de sólidos

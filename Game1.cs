@@ -9,6 +9,8 @@ and in order to maintain compatibility with the XNA code,
 it uses the same namespaces.
 */
 
+using System;
+using System.Collections.Generic;
 using Microsoft.VisualBasic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -43,7 +45,7 @@ Both of these variables are used for drawing to the screen.
         public static int windowHeight = 600;
 
         Controller myController;
-        private Block block1;
+        private List<Block> blocks;
         private Ball testBall;
 
 
@@ -75,7 +77,13 @@ and load any non-graphic related content.
         {
             // TODO: Add your initialization logic here
             testBall = new Ball();
-            block1 = new Block(128, 128);
+            blocks = new List<Block>
+            {
+                new Block(0, 0),
+                new Block(64, 64),
+                new Block(0, 64),
+                new Block(64, 0),
+            };
             myController = new Controller();
             base.Initialize();
         }
@@ -93,7 +101,11 @@ before the main game loop starts.
             myspriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
-            block1.LoadContent(Content);
+            
+            // Load content for each block and the ball
+            foreach (var block in blocks)
+                block.LoadContent(Content);
+            
             testBall.LoadContent(Content);
         }
 
@@ -115,6 +127,13 @@ and it is used to update your game state
             if (myController.inputExit.getState())
                 Exit();
 
+            // Check for collisions between the ball and each block
+            foreach (var blockC in blocks)
+            {
+                if (testBall.HitBox.Intersects(blockC.HitBox))
+                    Console.WriteLine("Bola >< Retangulo");
+            }
+
             testBall.Update(myController, elapedSec);
 
             base.Update(gameTime);
@@ -133,7 +152,9 @@ is responsible for drawing content to the screen.
 
             // TODO: Add your drawing code here
             myspriteBatch.Begin();
-            block1.Draw(myspriteBatch);
+            // Draw each block and the ball
+            foreach (var block in blocks)
+            block.Draw(myspriteBatch);
             testBall.Draw(myspriteBatch);
             myspriteBatch.End();
 

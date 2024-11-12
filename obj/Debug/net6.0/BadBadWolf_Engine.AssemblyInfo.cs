@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BadBadWolf_Engine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a6d353e84855dc849f494bf4edc1ef1869b026d9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BadBadWolf_Engine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BadBadWolf_Engine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
