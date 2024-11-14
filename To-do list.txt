@@ -1,6 +1,14 @@
 
-2º - Implementar deteção da colisao entre testBall e blocos na lista
-3º - Organizar e Planear maneira de estruturar Niveis com disposição matricial dos objetos + Colisoes
+1º (X) - colisão bola com blocos, impedir de movimentar
+
+2º ( ) - Posicionamento matricial dos objetos
+
+3º ( ) - Maneira de editar rapidamente o layout
+
+4º ( ) - sistema de pausa
+
+5º ( ) - sistema de menu
 
 Descubertas:
+-
 -flags de colisoes e propriedades de sólidos

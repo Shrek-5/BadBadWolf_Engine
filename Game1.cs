@@ -32,7 +32,7 @@ so its name is not that important.
     public class TestGame : Game
     {
 
-/* ! Instance Variables !
+        /* ! Instance Variables !
 
 The two default variables that the blank template starts with are
 the GraphicsDeviceManager and SpriteBatch.
@@ -49,7 +49,7 @@ Both of these variables are used for drawing to the screen.
         private Ball testBall;
 
 
-/* ! Constructor !
+        /* ! Constructor !
 
 The main game constructor is used to initialize the starting variables.
 In this case, a new GraphicsDeviceManager is created,
@@ -66,7 +66,7 @@ and the root directory containing the game's content files is set.
             mygraphics.ApplyChanges();
         }
 
-/* ! Initialize Method !
+        /* ! Initialize Method !
 
 The Initialize method is called after the constructor
 but before the main game loop (Update/Draw).
@@ -89,7 +89,7 @@ and load any non-graphic related content.
             base.Initialize();
         }
 
-/* ! LoadContent Method !
+        /* ! LoadContent Method !
 
 The LoadContent method is used to load your game content.
 It is called only once per game,
@@ -110,7 +110,7 @@ before the main game loop starts.
             testBall.LoadContent(Content);
         }
 
-/* ! Update Method !
+        /* ! Update Method !
 
 The Update method is called multiple times per second,
 and it is used to update your game state
@@ -128,19 +128,14 @@ and it is used to update your game state
             if (myController.inputExit.getState())
                 Exit();
 
-            // Check for collisions between the ball and each block
-            foreach (var blockC in blocks)
-            {
-                if (testBall.HitBox.Intersects(blockC.HitBox))
-                    Console.WriteLine("Bola >< Retangulo");
-            }
+            testBall.UpdateBallState(blocks);
 
             testBall.Update(myController, elapedSec);
 
             base.Update(gameTime);
         }
         
-/* ! Draw Method !
+        /* ! Draw Method !
 
 Similar to the Update method,
 the Draw method is also called multiple times per second.
